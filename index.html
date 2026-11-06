@@ -15,7 +15,7 @@
 <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center p-4" onclick="this.classList.add('hidden')"><img id="lightboxImg" class="max-w-full max-h-full object-contain"></div>
 <script>
 // 設定 GAS Web App 部署後的 /exec 網址
-const GAS_URL = '請填入_GAS_WEB_APP_EXEC_URL';
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbxjd67eXtuoIgqHkJnfCCyGKUIHyFdcTaaGTdeSfYmrF4vP73a7RQD0CHghG8IDQib-gw/exec';
 const $ = id => document.getElementById(id);
 let token=localStorage.getItem('ds_session')||'', me=null, state={settings:{},announcement:{},posts:[],pendingPosts:[],products:[],orders:[],photos:[]},cart=[],filter='all',authMode='login';
 function toast(s){$('toast').textContent=s;$('toast').classList.remove('hidden');setTimeout(()=>$('toast').classList.add('hidden'),2800)}
